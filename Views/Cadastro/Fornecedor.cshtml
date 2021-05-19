@@ -1,0 +1,52 @@
+﻿@model List<ControleEstoque.Models.FornecedorModel>
+@{
+    ViewBag.Title = "Fornecedores Cadastrados";
+}
+<style>
+    #grid_fornecedor > thead > tr th:nth-child(2) {
+        width: 80px;
+    }
+
+    #grid_fornecedor thead > tr th:nth-child(3) {
+        width: 200px;
+    }
+
+    #fornecedor {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #forncedor_cabecalho {
+        border-bottom: 1px #dddddd solid;
+    }
+
+    #forncedor_cabecalho {
+        margin-top: 20px;
+    }
+
+    #cabecalho_grid {
+        margin-bottom: 20px;
+    }
+</style>
+<div class="fornecedor">
+    <section id="forncedor_cabecalho">
+        <h1>@ViewBag.Title</h1>
+    </section>
+    <section id="fornecedor_conteudo">
+        <div class="row">
+            <div>
+                <div class="col-md-12">
+                    <table id="grid_fornecedor" class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Estado</th>
+                                <th>Pais</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
